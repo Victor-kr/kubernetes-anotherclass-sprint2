@@ -44,6 +44,7 @@ pipeline {
             steps {
 		sh "pwd"
 	    	sh "ls -al"
+		sh "mkdir -p ./${CLASS_NUM}/build/docker"
                 // jar 파일 복사
                 sh "cp ./build/libs/app-0.0.1-SNAPSHOT.jar ./${CLASS_NUM}/build/docker/app-0.0.1-SNAPSHOT.jar"
 
